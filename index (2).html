@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ISO 27001 Security Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1120;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(20px);
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+color:#00d4ff;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-size:16px;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#00d4ff;
+
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:50px;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero h1{
+
+font-size:65px;
+margin-bottom:20px;
+
+}
+
+.hero span{
+
+color:#00d4ff;
+
+}
+
+.hero p{
+
+font-size:20px;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+
+}
+
+.btn{
+
+display:inline-block;
+margin-top:40px;
+padding:15px 40px;
+background:#00d4ff;
+border-radius:50px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+}
+
+section{
+
+padding:90px 10%;
+
+}
+
+.title{
+
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#00d4ff;
+
+}
+
+.about{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+border-radius:15px;
+
+}
+
+.about h2{
+
+font-size:35px;
+margin-bottom:20px;
+
+}
+
+.about p{
+
+line-height:2;
+font-size:17px;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:#16213e;
+padding:30px;
+border-radius:15px;
+transition:.4s;
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:#1d3557;
+
+}
+
+.card h3{
+
+margin-bottom:20px;
+color:#00d4ff;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+}
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+text-align:center;
+
+}
+
+.box{
+
+background:#16213e;
+padding:40px;
+border-radius:15px;
+
+}
+
+.box h2{
+
+font-size:45px;
+color:#00d4ff;
+
+}
+
+.box p{
+
+margin-top:10px;
+
+}
+
+footer{
+
+background:black;
+padding:40px;
+text-align:center;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+ISO 27001 Portal
+
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#controls">Controls</a>
+<a href="#checklist">Checklist</a>
+<a href="#guide">Guide</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>
+
+Master <span>ISO 27001</span>
+
+</h1>
+
+<p>
+
+ISO/IEC 27001:2022 is the internationally recognized standard for building an
+Information Security Management System (ISMS). Explore the 10 management
+clauses, the 93 Annex A controls (organized into 4 themes per ISO/IEC 27002:2022),
+the certification audit process, and a practical implementation roadmap —
+all in one reference.
+
+</p>
+
+<a href="#about" class="btn">
+
+Explore Now
+
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h1 class="title">
+
+About ISO 27001
+
+</h1>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h2>
+
+Information Security Management System
+
+</h2>
+
+<p>
+
+ISO/IEC 27001 is published jointly by the International Organization for
+Standardization (ISO) and the International Electrotechnical Commission (IEC).
+The current edition, <strong>ISO/IEC 27001:2022</strong>, replaced the 2013
+version and restructured Annex A from 14 domains into 4 themes containing
+93 controls. It uses the Plan-Do-Check-Act (PDCA) cycle to help
+organizations of any size or sector identify information security risks and
+apply proportionate controls to treat them.
+
+<br><br>
+
+Certification is issued by an accredited certification body (e.g. one
+accredited by UKAS, ANAB, or another national accreditation body) after a
+two-stage audit — a documentation review (Stage 1) followed by an
+on-site implementation audit (Stage 2). Certificates are valid for three
+years, with annual surveillance audits and a recertification audit before
+expiry. This portal summarizes the management clauses, Annex A control
+themes, auditor checklist items, and a typical implementation timeline.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="stats" style="margin-top:60px;">
+
+<div class="box">
+<h2>10</h2>
+<p>Management Clauses</p>
+</div>
+
+<div class="box">
+<h2>4</h2>
+<p>Annex A Control Themes</p>
+</div>
+
+<div class="box">
+<h2>93</h2>
+<p>Annex A Controls</p>
+</div>
+
+<div class="box">
+<h2>3</h2>
+<p>Year Certification Cycle</p>
+</div>
+
+</div>
+
+</section>
+<!-- ================= CONTROLS SECTION ================= -->
+
+<section id="controls">
+
+<h1 class="title">ISO/IEC 27002:2022 Annex A Controls</h1>
+
+<p style="text-align:center;max-width:800px;margin:-20px auto 50px;line-height:1.8;color:#c9d6e3;">
+Annex A of ISO/IEC 27001:2022 lists 93 controls grouped into 4 themes.
+Organizations select applicable controls based on their risk assessment and
+record the justification in a Statement of Applicability (SoA).
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏢 Organizational Controls (37)</h3>
+<p>
+Policies for information security, roles &amp; responsibilities, threat
+intelligence, supplier relationships, incident management, business
+continuity, legal &amp; contractual requirements, and independent reviews
+of the ISMS.
+</p>
+</div>
+
+<div class="card">
+<h3>👤 People Controls (8)</h3>
+<p>
+Screening, terms &amp; conditions of employment, security awareness
+training, disciplinary processes, remote working, and confidentiality
+or non-disclosure agreements.
+</p>
+</div>
+
+<div class="card">
+<h3>🏭 Physical Controls (14)</h3>
+<p>
+Physical security perimeters, secure offices and facilities, equipment
+maintenance, clear desk &amp; clear screen policy, secure disposal of
+media, and protection against environmental threats.
+</p>
+</div>
+
+<div class="card">
+<h3>💻 Technological Controls (34)</h3>
+<p>
+Identity &amp; access management, authentication (including MFA),
+cryptography, network security, secure configuration, malware
+protection, logging &amp; monitoring, data leakage prevention, and
+secure development lifecycle.
+</p>
+</div>
+
+<div class="card">
+<h3>🆔 Identity Management</h3>
+<p>
+Every user should have a unique identity mapped to a real person.
+Shared or generic accounts must be approved, restricted, and monitored,
+and unused accounts should be disabled promptly (control A.5.16).
+</p>
+</div>
+
+<div class="card">
+<h3>🔑 Authentication (A.5.17, A.8.5)</h3>
+<p>
+Secure authentication information management, password complexity and
+rotation policy where used, multi-factor authentication for privileged
+and remote access, and encrypted transmission of credentials.
+</p>
+</div>
+
+<div class="card">
+<h3>🔐 Access Control (A.5.15, A.5.18, A.8.2–A.8.3)</h3>
+<p>
+Apply least-privilege and need-to-know, review access rights at
+planned intervals, restrict privileged access rights, and enforce
+formal access provisioning and de-provisioning.
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Risk Assessment (Clause 6.1.2)</h3>
+<p>
+Identify information security risks, analyze likelihood and impact
+against defined criteria, evaluate against risk acceptance criteria,
+and produce a Risk Treatment Plan (RTP) linked to the SoA.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= AUDITOR CHECKLIST ================= -->
+
+<section id="checklist">
+
+<h1 class="title">ISO 27001 Auditor Checklist</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ Clause 4 - Context</h3>
+<p>
+Determine internal & external issues,
+stakeholders,
+scope of ISMS,
+business objectives,
+and documented processes.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Clause 5 - Leadership</h3>
+<p>
+Verify leadership commitment,
+security policy,
+roles,
+responsibilities,
+resource allocation,
+and communication.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Clause 6 - Planning</h3>
+<p>
+Risk assessment,
+risk treatment,
+security objectives,
+Statement of Applicability (SoA),
+and planning for changes.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Clause 7 - Support</h3>
+<p>
+Resources,
+competence,
+training,
+awareness,
+communication,
+documentation,
+and document control.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Clause 8 - Operation</h3>
+<p>
+Operational planning,
+risk assessments,
+implementation,
+risk treatment,
+security controls,
+and monitoring.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Clause 9 - Performance Evaluation</h3>
+<p>
+Internal audits,
+monitoring,
+measurement,
+KPIs,
+management reviews,
+and continual evaluation.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Clause 10 - Improvement</h3>
+<p>
+Corrective actions,
+non-conformities,
+root cause analysis,
+continuous ISMS improvements,
+and lessons learned.
+</p>
+</div>
+
+<div class="card">
+<h3>✔ Evidence Collection</h3>
+<p>
+Policies,
+risk registers,
+training records,
+meeting minutes,
+audit reports,
+asset inventory,
+and SoA documents.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= IMPLEMENTATION ================= -->
+
+<section id="guide">
+
+<h1 class="title">Implementation Roadmap</h1>
+
+<div class="stats">
+
+<div class="box">
+<h2>01</h2>
+<p>Define ISMS Scope</p>
+</div>
+
+<div class="box">
+<h2>02</h2>
+<p>Risk Assessment</p>
+</div>
+
+<div class="box">
+<h2>03</h2>
+<p>Apply Controls</p>
+</div>
+
+<div class="box">
+<h2>04</h2>
+<p>Internal Audit</p>
+</div>
+
+<div class="box">
+<h2>05</h2>
+<p>Management Review</p>
+</div>
+
+<div class="box">
+<h2>06</h2>
+<p>Certification</p>
+</div>
+
+<div class="box">
+<h2>07</h2>
+<p>Continuous Improvement</p>
+</div>
+
+<div class="box">
+<h2>08</h2>
+<p>Re-certification</p>
+</div>
+
+</div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h1 class="title">Contact & Resources</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>📘 ISO 27001</h3>
+<p>
+Learn how organizations build, maintain, and continuously improve an Information Security Management System (ISMS).
+</p>
+</div>
+
+<div class="card">
+<h3>🛡 ISO 27002</h3>
+<p>
+Explore practical security controls covering identity management, authentication, access control, supplier security, logging, and monitoring.
+</p>
+</div>
+
+<div class="card">
+<h3>📋 Auditor</h3>
+<p>
+Review implementation evidence, internal audit reports, risk registers, management reviews, corrective actions, and compliance documentation.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Back To Top -->
+
+<button id="topBtn">↑</button>
+
+<footer>
+
+<h2>ISO 27001 Security Portal</h2>
+
+<p>
+Developed for learning purposes using HTML, CSS & JavaScript.
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<style>
+
+#topBtn{
+
+position:fixed;
+bottom:30px;
+right:30px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#00d4ff;
+color:#000;
+font-size:22px;
+cursor:pointer;
+display:none;
+transition:.3s;
+font-weight:bold;
+
+}
+
+#topBtn:hover{
+
+transform:scale(1.1);
+
+}
+
+.fade{
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+.fade.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.searchBox{
+
+width:100%;
+padding:15px;
+margin:30px 0;
+font-size:18px;
+border:none;
+border-radius:10px;
+
+}
+
+</style>
+
+<script>
+
+// Scroll Animation
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card,.box,.about,.title").forEach(el=>{
+
+el.classList.add("fade");
+
+observer.observe(el);
+
+});
+
+// Back To Top
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+};
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+// Animated Counters
+
+const counters=document.querySelectorAll(".box h2");
+
+counters.forEach(counter=>{
+
+let target=counter.innerText;
+
+if(isNaN(target)) return;
+
+let count=0;
+
+let speed=25;
+
+let update=()=>{
+
+if(count<target){
+
+count++;
+
+counter.innerText=count;
+
+setTimeout(update,speed);
+
+}
+
+}
+
+update();
+
+});
+
+// Dynamic Year
+
+document.querySelector("footer p:last-child").innerHTML =
+"© " + new Date().getFullYear() + " All Rights Reserved";
+
+// Navbar Highlight
+
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll("nav a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const sectionTop=section.offsetTop-150;
+
+if(pageYOffset>=sectionTop){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.style.color="white";
+
+if(link.getAttribute("href")==="#"+current){
+
+link.style.color="#00d4ff";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
